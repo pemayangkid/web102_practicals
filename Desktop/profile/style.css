@@ -1,0 +1,162 @@
+/* ----------General Styles---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #1f2833;
+  color: #fff;
+}
+
+/* ---------- Navbar---------- */
+.navbar { display: flex; 
+  justify-content: space-between; /* Logo left, nav links right */ 
+  align-items: center; 
+  padding: 20px 60px; 
+  background: #1f2833; 
+  position: sticky; /* Sticks to top on scroll */ 
+  top: 0; 
+  z-index: 100; 
+} 
+
+.navbar ul { list-style: none; /* Remove bullets */ 
+  display: flex; 
+  gap: 30px; /* Spacing between links */ 
+} 
+
+.navbar a { 
+  color: hsl(0, 3%, 94%); 
+  transition: color 0.3s; /* Smooth color change */ 
+} 
+
+.navbar a:hover { 
+  color: #00bcd4; /* Changes color when hovered */ 
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 100px;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 65px;
+  line-height: 1.2;
+}
+
+.hero-text h1 span {
+  color: #00bcd4;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  color: #ccc;
+}
+
+.hero-img {
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.4);
+}
+
+/* ---------- About Section ---------- */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 80px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  max-width: 500px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-white {
+  color: #fff;
+}
+.about-blue {
+  color: #00bcd4;
+}
+
+.about-img {
+  width: 320px;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Skills Section ---------- */
+.skills {
+  text-align: center;
+  padding: 100px 50px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.skills h2 span {
+  color: #00bcd4;
+}
+
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #1b232c;
+  border-radius: 12px;
+  width: 180px;
+  padding: 25px;
+  transition: transform 0.4s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 188, 212, 0.3);
+}
+
+.card img {
+  width: 60px;
+}
+
+.card h3 {
+  margin-top: 15px;
+  color: #00bcd4;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 50px;
+  background: #1f2833;
+  color: #bbb;
+  font-size: 14px;
+}
